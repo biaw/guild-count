@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Guild Count BIAW</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+    <style type="text/css">
+      body {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 0 auto;
+
+        background-color: #333333;
+      }
+      p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        animation-name: rainbow;
+        animation-duration: 20s;
+        animation-fill-mode: linear;
+		    animation-iteration-count: infinite;
+
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+      }
+      @keyframes rainbow {
+        100%,0%{ color: rgb(255,0,0); }
+        8%{ color: rgb(255,127,0); }
+        16%{ color: rgb(255,255,0); }
+        25%{ color: rgb(127,255,0); }
+        33%{ color: rgb(0,255,0); }
+        41%{ color: rgb(0,255,127); }
+        50%{ color: rgb(0,255,255); }
+        58%{ color: rgb(0,127,255); }
+        66%{ color: rgb(0,0,255); }
+        75%{ color: rgb(127,0,255); }
+        83%{ color: rgb(255,0,255); }
+        91%{ color: rgb(255,0,127); }
+      }
+    </style>
+  </head>
+  <body>
+    <p>You are in {{GUILDS}}/100 servers.</p>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "discord-oauth2": "^2.2.0",
+    "fs": "^0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biaw/guild-count.git"
+  },
+  "license": "MIT"
+}
